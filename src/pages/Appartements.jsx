@@ -12,7 +12,6 @@ export default function Appartement() {
 	const selectedAppartement = appartementsData.find(
 		(appartement) => appartement.id === id
 	);
-	console.log(selectedAppartement);
 
 	if (!selectedAppartement) {
 		return <Navigate to="error" />;
