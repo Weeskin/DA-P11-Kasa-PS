@@ -1,6 +1,6 @@
-@import './styles/colors';
-@import './styles/mixins';
+@use './styles/colors';
+@use './styles/mixins';
 
 .rate {
-    @include position-right
+    @include mixins.position-right
 }

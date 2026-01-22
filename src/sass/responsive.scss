@@ -1,5 +1,5 @@
-@import './styles/colors';
-@import './styles/mixins';
+@use './styles/colors';
+@use './styles/mixins';
 
 @media (max-width: 768px) {
 
@@ -50,7 +50,7 @@
     .card-container {
         grid-template-columns: 1fr;
 
-        background-color: $white;
+        background-color: colors.$white;
         grid-gap: 2rem;
         padding: 0;
 
@@ -61,7 +61,7 @@
     }
 
     .slideshow-container {
-        margin-top: 0%;
+        margin-top: 0;
 
         .slideshow-navigation {
 
@@ -141,7 +141,7 @@
 
     .collapse-container_appartement {
         margin-top: 10px;
-        @include center-column;
+        @include mixins.center-column;
 
         .collapse {
             width: 84vw;

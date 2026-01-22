@@ -1,35 +1,35 @@
-@import './styles/colors';
-@import './styles/mixins';
+@use './styles/colors';
+@use './styles/mixins';
 
 .appartement-info_location {
     .label-container {
         .title-location {
             font-size: 36px;
             font-weight: 500;
-            color: $primary;
-            margin-bottom: 0%;
+            color: colors.$primary;
+            margin-bottom: 0;
         }
 
         .subtitle-location {
             font-size: 18px;
             font-weight: 500;
-            color: $black;
+            color: colors.$black;
             margin-top: 0.5rem;
         }
     }
 
     .tags {
-        @include left;
+        @include mixins.left;
 
 
         span {
-            @include center;
+            @include mixins.center;
             text-align: center;
             width: 7.19rem;
             height: 1.8vw;
             border-radius: 10px;
-            background-color: $primary;
-            color: $white;
+            background-color: colors.$primary;
+            color: colors.$white;
             padding: 3px 40px 3px 40px;
             margin-right: 10px;
             text-wrap: nowrap;

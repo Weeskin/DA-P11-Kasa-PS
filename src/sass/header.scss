@@ -1,5 +1,5 @@
-@import './styles/colors';
-@import './styles/mixins';
+@use './styles/colors';
+@use './styles/mixins';
 
 header {
   display: flex;
@@ -10,7 +10,7 @@ header {
 
 
   .logo {
-    @include position-left;
+    @include mixins.position-left;
 
     :hover {
       cursor: pointer;
@@ -22,10 +22,10 @@ header {
   }
 
   .navbar {
-    @include position-right;
+    @include mixins.position-right;
 
     .link {
-      color: $black;
+      color: colors.$black;
       text-decoration: none;
       font-size: 20px;
       font-weight: 500;

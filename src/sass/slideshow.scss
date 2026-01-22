@@ -1,5 +1,4 @@
-@import './styles/colors';
-@import './styles/mixins';
+@use './styles/colors';
 
 .slideshow-container {
     margin: 3rem 0 1rem 0;
@@ -41,9 +40,8 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 18px;
-            color: $white;
+            color: colors.$white;
 
         }
     }
-
 }

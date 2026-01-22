@@ -1,25 +1,24 @@
-@import './styles/colors';
-@import './styles/mixins';
+@use './styles/colors';
+@use './styles/mixins';
 
 .error-section {
-    @include center-column;
+    @include mixins.center-column;
 
     .error-number {
-        color: $primary;
+        color: colors.$primary;
         font-size: 18rem;
         font-weight: 700;
-        margin: 0;
-        margin-top: 4rem;
+        margin: 4rem 0 0 0;
     }
 
     .error-text {
-        color: $primary;
+        color: colors.$primary;
         font-size: 36px;
 
     }
 
     .error-back_home {
-        color: $black;
+        color: colors.$black;
         font-size: 18px;
         margin: 7rem 0;
     }

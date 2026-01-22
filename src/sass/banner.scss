@@ -1,14 +1,13 @@
-@import './styles/colors';
-@import './styles/mixins';
-
+@use './styles/colors';
+@use './styles/mixins';
 
 .banner {
-    @include center;
+    @include mixins.center;
     margin: 5rem 0 7rem 0;
     height: 7rem;
 
     .banner-image {
-        @include center;
+        @include mixins.center;
         position: absolute;
         border-radius: 25px;
         object-fit: cover;
@@ -20,20 +19,20 @@
     }
 
     .banner-background {
-        @include center;
+        @include mixins.center;
         position: absolute;
         width: 85vw;
         height: 12rem;
-        background-color: $black;
+        background-color: colors.$black;
         opacity: 0.6;
         z-index: 2;
         border-radius: 25px;
     }
 
     .banner-title {
-        @include center;
+        @include mixins.center;
         width: 85vw;
-        color: $white;
+        color: colors.$white;
         z-index: 3;
         font-size: 48px;
         font-weight: 700;
