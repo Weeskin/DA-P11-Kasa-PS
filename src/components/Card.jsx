@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import appartementsData from "../data/apartments.json";
+import apartmentsData from "../data/apartments.json";
 
 function Card() {
-	const cardSheet = appartementsData.map((card) => {
+	const cardSheet = apartmentsData.map((card) => {
 		return (
 			<section key={card.id}>
 				<Link
 					className="link-card"
-					to={`/appartements/${card.id}`}
+					to={`/apartments/${card.id}`}
 				>
 					<img
 						className="card-image"

@@ -5,45 +5,45 @@ import Tags from "../components/Tags";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
 import Collapse from "../components/Collapse";
-import appartementsData from "../data/apartments.json";
+import apartmentsData from "../data/apartments.json";
 
 export default function Apartment() {
 	const { id } = useParams(); // Récupère l'ID depuis l'URL
-	const selectedAppartement = appartementsData.find(
-		(appartement) => appartement.id === id
+	const selectedApartment = apartmentsData.find(
+		(apartment) => apartment.id === id
 	);
 
-	if (!selectedAppartement) {
+	if (!selectedApartment) {
 		return <Navigate to="error" />;
 	}
 
 	return (
 		<div className="apartment-container">
-			<Slideshow pictures={selectedAppartement.pictures} />
+			<Slideshow pictures={selectedApartment.pictures} />
 			<div className="apartmen-info_container">
 				<div className="apartments-info_location">
 					<TitleLocation
-						title={selectedAppartement.title}
-						location={selectedAppartement.location}
+						title={selectedApartment.title}
+						location={selectedApartment.location}
 					/>
-					<Tags tags={selectedAppartement.tags} />
+					<Tags tags={selectedApartment.tags} />
 				</div>
 				<div className="apartment-info_host">
 					<Host
-						name={selectedAppartement.host.name}
-						picture={selectedAppartement.host.picture}
+						name={selectedApartment.host.name}
+						picture={selectedApartment.host.picture}
 					/>
-					<Rate rating={selectedAppartement.rating} />
+					<Rate rating={selectedApartment.rating} />
 				</div>
 			</div>
 			<div className="collapse-container_apartment">
 				<Collapse
 					title={"Description"}
-					description={selectedAppartement.description}
+					description={selectedApartment.description}
 				/>
 				<Collapse
 					title={"Équipements"}
-					description={selectedAppartement.equipments}
+					description={selectedApartment.equipments}
 				/>
 			</div>
 		</div>

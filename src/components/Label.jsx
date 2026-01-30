@@ -4,8 +4,8 @@ import "../../sass/layout/_labelTags.scss";
 export default function Label({ title, location }) {
 	return (
 		<div className="label-container">
-			<h1 className="appartement-title">{title}</h1>
-			<p className="appartement-location">{location}</p>
+			<h1 className="apartment-title">{title}</h1>
+			<p className="apartment-location">{location}</p>
 		</div>
 	);
 }
