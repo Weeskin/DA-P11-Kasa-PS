@@ -88,7 +88,7 @@
         display: flex;
         flex-direction: column;
 
-        .appartement-info_location {
+        .apartments-info_location {
             .title-location {
                 font-size: 18px;
             }
@@ -108,7 +108,7 @@
             }
         }
 
-        .appartement-info_host {
+        .apartment-info_host {
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -139,7 +139,7 @@
         }
     }
 
-    .collapse-container_appartement {
+    .collapse-container_apartment {
         margin-top: 10px;
         @include mixins.center-column;
 

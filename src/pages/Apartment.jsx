@@ -5,9 +5,9 @@ import Tags from "../components/Tags";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
 import Collapse from "../components/Collapse";
-import appartementsData from "../data/appartements.json";
+import appartementsData from "../data/apartments.json";
 
-export default function Appartement() {
+export default function Apartment() {
 	const { id } = useParams(); // Récupère l'ID depuis l'URL
 	const selectedAppartement = appartementsData.find(
 		(appartement) => appartement.id === id
@@ -18,17 +18,17 @@ export default function Appartement() {
 	}
 
 	return (
-		<div className="appartement-container">
+		<div className="apartment-container">
 			<Slideshow pictures={selectedAppartement.pictures} />
-			<div className="appartement-info_container">
-				<div className="appartement-info_location">
+			<div className="apartmen-info_container">
+				<div className="apartments-info_location">
 					<TitleLocation
 						title={selectedAppartement.title}
 						location={selectedAppartement.location}
 					/>
 					<Tags tags={selectedAppartement.tags} />
 				</div>
-				<div className="appartement-info_host">
+				<div className="apartment-info_host">
 					<Host
 						name={selectedAppartement.host.name}
 						picture={selectedAppartement.host.picture}
@@ -36,7 +36,7 @@ export default function Appartement() {
 					<Rate rating={selectedAppartement.rating} />
 				</div>
 			</div>
-			<div className="collapse-container_appartement">
+			<div className="collapse-container_apartment">
 				<Collapse
 					title={"Description"}
 					description={selectedAppartement.description}

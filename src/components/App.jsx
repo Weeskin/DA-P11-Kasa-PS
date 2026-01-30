@@ -3,8 +3,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Error from "../pages/Error";
 import Home from "../pages/Home";
-import Appartements from "../pages/Appartements";
-import Apropos from "../pages/Apropos";
+import Apartment from "../pages/Apartment";
+import About from "../pages/About";
 
 function App() {
 	return (
@@ -16,12 +16,12 @@ function App() {
 					element={<Home />}
 				/>
 				<Route
-					path="/apropos"
-					element={<Apropos />}
+					path="/about"
+					element={<About />}
 				/>
 				<Route
-					path="/appartements/:id"
-					element={<Appartements />}
+					path="/apartment/:id"
+					element={<Apartment />}
 				/>
 				<Route
 					path="/*"

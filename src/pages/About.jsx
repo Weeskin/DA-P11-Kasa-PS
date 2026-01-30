@@ -1,9 +1,9 @@
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
-import bannerAproposPage from "../assets/banners/banner-apropos.png";
-import aproposData from "../data/apropos.json";
+import bannerAboutPage from "../assets/banners/banner-about.png";
+import aproposData from "../data/about.json";
 
-export default function Apropos() {
+export default function About() {
 	//state
 	const collapseContent = aproposData.map((item) => (
 		<Collapse
@@ -15,8 +15,8 @@ export default function Apropos() {
 
 	//rendu
 	return (
-		<div className="apropos-page">
-			<Banner image={bannerAproposPage} />
+		<div className="about-page">
+			<Banner image={bannerAboutPage} />
 			<div className="collapse-container_apropos">{collapseContent}</div>
 		</div>
 	);

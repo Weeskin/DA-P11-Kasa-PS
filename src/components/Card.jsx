@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import appartementsData from "../data/appartements.json";
+import appartementsData from "../data/apartments.json";
 
 function Card() {
 	const cardSheet = appartementsData.map((card) => {

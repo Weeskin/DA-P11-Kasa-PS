@@ -1,7 +1,7 @@
 @use './styles/colors';
 @use './styles/mixins';
 
-.appartement-info_host {
+.apartment-info_host {
     @include mixins.position-right;
     flex-direction: column;
 
