@@ -1,23 +1,21 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
-	const location = useLocation();
-
 	return (
 		<div className="navbar">
 			<nav>
-				<Link
-					className={`link ${location.pathname === "/" ? "active" : ""}`}
+				<NavLink
+					className={({ isActive }) => `link ${isActive ? "active" : ""}`}
 					to="/"
 				>
 					Accueil
-				</Link>
-				<Link
-					className={`link ${location.pathname === "/apropos" ? "active" : ""}`}
-					to="/apropos"
+				</NavLink>
+				<NavLink
+					className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+					to="/about"
 				>
 					À propos
-				</Link>
+				</NavLink>
 			</nav>
 		</div>
 	);

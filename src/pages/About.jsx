@@ -1,11 +1,11 @@
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import bannerAboutPage from "../assets/banners/banner-about.png";
-import aproposData from "../data/about.json";
+import aboutData from "../data/about.json";
 
 export default function About() {
 	//state
-	const collapseContent = aproposData.map((item) => (
+	const collapseContent = aboutData.map((item) => (
 		<Collapse
 			key={item.id}
 			title={item.title}

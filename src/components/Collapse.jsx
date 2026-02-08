@@ -14,7 +14,6 @@ export default function Collapse({ id, title, description }) {
 	let contentElement;
 
 	//comportement
-
 	if (typeof description === "string") {
 		contentElement = <p>{description}</p>;
 	} else if (Array.isArray(description)) {

@@ -20,7 +20,7 @@ export default function Apartment() {
 	return (
 		<div className="apartment-container">
 			<Slideshow pictures={selectedApartment.pictures} />
-			<div className="apartmen-info_container">
+			<div className="apartment-info_container">
 				<div className="apartments-info_location">
 					<TitleLocation
 						title={selectedApartment.title}
