@@ -34,9 +34,9 @@ export default function Collapse({ id, title, description }) {
 			>
 				<h2>{title}</h2>
 				<img
-					src={isOpen ? ArrowBackDown : ArrowBackUp}
+					src={ ArrowBackUp}
 					alt="Arrow"
-					className="arrow-back"
+					className={`arrow-back ${isOpen ? "arrow-back--rotated" : ""}`}
 				/>
 			</div>
 			<div className={`collapse-body ${isOpen ? "collapse-body--open" : ""}`}>
