@@ -24,7 +24,7 @@
         width: 85vw;
         height: 12rem;
         background-color: colors.$black;
-        opacity: 0.6;
+        opacity: 0.5;
         z-index: 2;
         border-radius: 25px;
     }
@@ -34,8 +34,17 @@
         width: 85vw;
         color: colors.$white;
         z-index: 3;
+        font-family: "Montserrat", sans-serif;
         font-size: 48px;
         font-weight: 700;
         text-align: center;
+
+        text-shadow:
+            /* 4 ombres pour simuler le contour de 1px */
+            -1px -1px 0 colors.$black,
+             1px -1px 0 colors.$black,
+            -1px  1px 0 colors.$black,
+             1px  1px 0 colors.$black,
+             0 4px 8px rgba(0, 0, 0, 0.7);
     }
 }
